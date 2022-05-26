@@ -1,0 +1,1307 @@
+/* ------------Обнуление стилей------------ */
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	background-color:black;
+    font-family: 'Ubuntu';
+	color: #FFFFFF;
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;color: #FFFFFF}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+/* ------------Обнуление стилей------------ */
+.common-wrapper {
+	width: 1920px;
+	margin: 0 auto;
+}
+
+.container {
+	max-width: 1291px;
+	margin: 0 auto;
+	background-color: black;
+}
+/* ------------Header------------ */
+
+.header__wrapper {
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+.header__logo {
+	margin-top: 10px;
+}
+.header__adress {
+	margin-top: 36px;
+	display: flex;
+}
+.header__adress__formobile {
+	display: none;
+}
+.header__adress__pin {
+	max-width: 40px;
+	max-height: 40px;
+}
+.header__adress__text {
+	margin-left: 15px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 150%;
+}
+.header__contacts {
+	margin-top: 41px;
+	display: flex;
+}
+.header__contacts__phone{
+	max-width: 40px;
+	max-height: 40px;
+}
+.header__contacts__content {
+	margin-left: 15px;
+	display: flex;
+	flex-direction: column;
+}
+.header__number {
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 150%;
+	text-decoration: none;
+}
+.header__link {
+	text-decoration: underline;
+}
+/* ------------Header------------ */
+
+/* -----------Header - Breakpoints for iPad mini----------- */
+@media (max-width: 768px) {
+	.container {
+		max-width: 768px;
+	}
+	.header__logo {
+		max-width: 100px;
+		max-height: 100px;
+		margin: 20px 0 0 0;
+	}
+	.header__logo img{
+		max-width: 100px;
+		max-height: 100px;
+	}
+	.header__adress {
+		margin: 47px 0 0 45px;
+		display: flex;
+	}
+	.header__adress__pin {
+		max-width: 25px;
+		max-height: 25px;
+	}
+	.header__adress__text {
+		margin-left: 10px;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 150%;
+	}
+	.header__contacts {
+		margin: 48px 0px 0 45px;
+		display: flex;
+	}
+	.header__contacts__phone img{
+		max-width: 25px;
+		max-height: 25px;
+	}
+	.header__contacts__content {
+		margin-left: 10px;
+		display: flex;
+		flex-direction: column;
+	}
+	.header__number {
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 150%;
+		text-decoration: none;
+	}	
+	.header__link {
+		text-decoration: underline;
+		font-size: 10px;
+	}
+}
+/* -----------Header - Breakpoints for iPad mini----------- */
+
+/* -----------Header - Breakpoints for mobile----------- */
+@media (max-width: 360px) {
+	.container {
+		max-width: 360px;
+	}
+	.header__wrapper {
+		margin: 0 auto;
+		display: flex;
+		justify-content: flex-start;
+	}
+	.header__logo{
+		margin: 21px 0 0 0;
+	}
+	.header__logo img{
+		max-width: 48px;
+		max-height: 48px;
+	}
+	.header__adress {
+		display: none;
+		margin: 0px 0 0 0px;
+	}
+	.header__adress__formobile {
+		display: flex;
+		justify-content: flex-start;
+		padding: 20px 0px 0px 0px;
+		
+	}
+	.header__adress__pin-formobile {
+		max-width: 20px;
+		max-height: 20px;
+		margin-right: 10px;
+	}
+	.header__adress__text-formobile {
+		font-weight: 500;
+		font-size: 13px;
+		line-height: 150%;
+		color: #FFFFFF;
+	}
+	.header__contacts {
+		margin: 25px 0px 0 100px;
+	}
+	.header__contacts__phone {
+		max-width: 20px;
+		max-height: 20px;
+	}
+	.header__contacts__content {
+		margin-left: 10px;
+		display: flex;
+		flex-direction: column;
+	}
+}
+/* -----------Header - Breakpoints for mobile (360px)----------- */
+
+/* ------------Main------------ */
+.main {
+	max-height: 750px;
+	padding: 85px 0 0 0;
+}
+.main__wrapper {
+	background: url(../img/boxer.png) center center no-repeat;
+	background-size: 50% 100%;
+}
+.main__descr {
+	max-width: 330px;
+	max-height: 93px;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 130%;
+}
+.main__title {
+	margin-top: 154px;
+	font-weight: bold;
+	font-size: 72px;
+	line-height: 120%;
+	text-align: center;
+	text-transform: uppercase;
+}
+.main__content {
+	display: flex;
+}
+.main__annotation {
+	margin-top: 197px;
+	max-width: 410px;
+	max-height: 135px;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 150%;
+}
+.main__button {
+	margin: 237px 0 0 493px;
+	width: 277px;
+	height: 55px;
+	background: #F9BA50;
+	border-radius: 0px 40px 40px 0px;
+
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 21px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+/* ------------Main------------ */
+
+/* -----------Main - Breakpoints for iPad mini----------- */
+@media (max-width: 768px) {
+	.container {
+		max-width: 768px;
+	}
+	.main__wrapper {
+		background: url(../img/boxer.png) center center no-repeat;
+		background-size: 75% 100%;
+		padding: 60px 0 0 0;
+	}
+	.main__descr {
+		margin-left: 20px;
+		max-width: 222px;
+		max-height: 93px;
+		font-size: 16px;
+	}
+	.main__title {
+		margin: 0 auto;
+		max-width: 500px;
+		max-height: 231px;
+		margin-top: 200px;
+		font-size: 64px;
+	}
+	.main__annotation {
+		margin: 77px 0 0 20px;
+		max-width: 380px;
+		max-height: 120px;
+		font-size: 16px;
+	}
+	.main__button {
+		margin: 100px 0 0 71px;
+	}
+}
+/* -----------Main - Breakpoints for iPad mini----------- */
+
+/* -----------Main - Breakpoints for mobile (360px)----------- */
+@media (max-width: 413px) {
+	.container {
+		max-width: 413px;
+	}
+	.main {
+		max-height: 750px;
+		padding: 0 0 0 0;
+	}
+	.main__wrapper {
+		background: url(../img/boxer.png) center center no-repeat;
+		background-size: 360px 392px;
+		padding: 40px 0 0 0;
+	}
+	.main__descr {
+		margin-top: 10px;
+		margin-left: 0;
+		max-width: 320px;
+		max-height: 36px;
+		font-size: 14px;
+	}
+	.main__title {
+		margin-top: 30px;
+		font-size: 44px;
+		text-align: start;
+	}
+	.main__content {
+		display: flex;
+		flex-direction: column;
+	}
+	.main__annotation {
+		padding: 0 0 0 0;
+		margin-left: 0;
+		margin-top: 30px;
+		max-width: 320px;
+		max-height: 105px;
+		font-size: 14px;
+	}
+	.main__button {
+		margin: 67px 0 0 0;
+		width: 277px;
+		height: 55px;
+		background: #F9BA50;
+		border-radius: 0px 40px 40px 0px;
+	
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 21px;
+		text-transform: uppercase;
+		color: #FFFFFF;
+	}
+}
+/* -----------Main - Breakpoints for mobile (360px)----------- */
+
+
+/* ------------About------------ */
+.about {
+	max-height: 1063px;
+	padding: 150px 0 0 0;
+}
+.about__wrapper {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+}
+.about__title-mobile {
+	display: none;
+}
+.about_gloves {
+	max-height: 800px;
+	max-width: 650px;
+}
+.about_gloves img{
+	max-height: 800px;
+	max-width: 650px;
+}
+.about__text {
+	margin-left: 119px;
+	display: flex;
+	flex-direction: column;
+}
+.about__text-mobile {
+	display: none;
+}
+.about__title {
+	font-weight: bold;
+	font-size: 72px;
+	line-height: 120%;
+	text-transform: uppercase;
+}
+.about__descr {
+	margin-top: 60px;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 170%;
+}
+.about__button {
+	margin-top: 80px;
+	width: 277px;
+	height: 55px;
+	background: #F9BA50;
+	border-radius: 0px 40px 40px 0px;
+
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 21px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+.about__boxer {
+	position: absolute;
+	top: 493px;
+	left: 239px;
+}
+/* ------------About------------ */
+
+/* -----------About - Breakpoints for iPad mini----------- */
+@media (max-width: 768px) {
+	.container {
+		max-width: 768px;
+		padding: 0 20px 0 20px;
+	}
+	.about__wrapper {
+		flex: 0 1 50%;
+	}
+	.about__title-mobile {
+		display: none;
+	}
+	.about_gloves img{
+		max-height: 436px;
+		max-width: 354px;
+	}
+	.about__text {
+		margin-left: 20px;
+	}
+	.about__text-mobile {
+		display: none;
+	}
+	.about__title {
+		font-size: 36px;
+	}
+	.about__descr {
+		margin-top: 40px;
+		font-size: 16px;
+		height: 297px;
+	}
+	.about__button {
+		margin-top: 40px;
+	}
+	.about__boxer {
+		position: absolute;
+		top: 373px;
+		left: 147px;
+	}
+	.about__boxer img {
+		max-width: 170px;
+		max-height: 170px;
+	}
+}
+/* -----------About - Breakpoints for iPad mini----------- */
+
+/* -----------About - Breakpoints for mobile (360px)----------- */
+
+@media (max-width: 360px) {
+	.container {
+		max-width: 360px;
+	}
+	.about {
+		max-height: 1063px;
+		padding: 80px 0 0 0;
+	}
+	.about__wrapper {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+	}
+	.about__title-mobile {
+		display: block;
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 120%;
+		text-transform: uppercase;
+	}
+	.about_gloves {
+		margin-top: 40px;
+		max-height: 300px;
+		max-width: 320px;
+	}
+	.about_gloves img{
+		max-height: 300px;
+		max-width: 320px;
+	}
+	.about__text {
+		display: none;
+	}
+	.about__text-mobile {
+		display: flex;
+		flex-direction: column;
+	}
+	.about__descr-mobile {
+		margin-top: 71px;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 170%;
+	}
+	.about__button-mobile {
+		margin-top: 40px;
+		width: 277px;
+		height: 55px;
+		background: #F9BA50;
+		border-radius: 0px 40px 40px 0px;
+	
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 21px;
+		text-transform: uppercase;
+		color: #FFFFFF;
+	}
+	.about__boxer {
+		position: absolute;
+		top: 250px;
+		left: 152px;
+	}
+}
+
+/* -----------About - Breakpoints for mobile (413px)----------- */
+
+
+/* ------------Trainers------------ */
+.trainers {
+	padding: 150px 0 0 0;
+}
+.trainers__title {
+	font-weight: bold;
+	font-size: 72px;
+	line-height: 120%;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+.trainers__wrapper {
+	margin-top: 100px;
+	display: flex;
+	justify-content: space-between;
+}
+.trainers__item {
+	position: relative;
+	max-width: 630px;
+	max-height: 550px;
+}
+.trainers__text__left {
+	display: flex;
+	position: absolute;
+	left: 0;
+	top: 503px;
+}
+.trainers__text__right {
+	display: flex;
+	position: absolute;
+	left: 0;
+	top: 402px;
+}
+.trainers__bodao {
+	font-weight: bold;
+	font-size: 64px;
+	line-height: 120%;
+	text-transform: uppercase;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke: 2px white;
+}
+.trainers__barroso {
+	margin-left: 10px;
+	font-weight: bold;
+	font-size: 64px;
+	line-height: 120%;
+	text-transform: uppercase;
+}
+.trainers__decsr {
+	margin-top: 40px;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 150%;
+}
+.trainers__decsr-ipad {
+	display: none;
+}
+.trainers__decsr-mobile {
+	display: none;
+}
+/* ------------Trainers------------ */
+
+/* -----------Trainers - Breakpoints for iPad mini----------- */
+@media (max-width: 768px) {
+	.container {
+		max-width: 768px;
+		padding: 0 20px 0 20px;
+	}
+	.trainers {
+		padding: 150px 0 0 0;
+	}
+	.trainers__title {
+		font-size: 36px;
+	}
+	.trainers__wrapper {
+		margin-top: 60px;
+	}
+	.trainers__item img{
+		max-width: 354px;
+		max-height: 310px;
+	}
+	.trainers__text__left {
+		top: 295px;
+	}
+	.trainers__text__right {
+		top: 295px;
+	}
+	.trainers__bodao {
+		font-size: 36px;
+	}
+	.trainers__barroso {
+		margin-left: 10px;
+		font-size: 36px;
+	}
+	.trainers__decsr {
+		display: none;
+		margin-top: 100px;
+		font-size: 16px;
+	}
+	.trainers__decsr-ipad {
+		margin-top: 40px;
+		display: flex;
+		justify-content: space-between;
+		
+	}
+	.trainers__descr-ipad-item {
+		max-width: 354px;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 150%;
+		color: #FFFFFF;
+	}
+}
+/* -----------Trainers - Breakpoints for iPad mini----------- */
+
+/* -----------Trainers - Breakpoints for mobile----------- */
+@media (max-width: 360px) {
+	.container {
+		max-width: 360px;
+	}
+	.trainers {
+		padding: 60px 0 0 0;
+	}
+	.trainers__title {
+		font-size: 24px;
+	}
+	.trainers__wrapper {
+		margin-top: 40px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.trainers__item {
+		position: relative;
+		max-width: 320px;
+		max-height: 280px;
+	}
+	.trainers__item img {
+		max-width: 320px;
+		max-height: 280px;
+	}
+	.trainers__text__left {
+		display: flex;
+		position: absolute;
+		left: 0;
+		top: 264px;
+	}
+	.trainers__text__right {
+		display: flex;
+		position: absolute;
+		left: 0;
+		top: 224px;
+	}
+	.trainers__bodao {
+		font-size: 30px;
+		-webkit-text-stroke: 1px white;
+	}
+	.trainers__barroso {
+		margin-left: 10px;
+		font-weight: bold;
+		font-size: 30px;
+	}
+	.trainers__decsr {
+		display: none;		
+	}
+	.trainers__decsr-ipad {
+		display: none;
+	}
+	.trainers__descr-ipad-item {
+		display: none;
+	}
+	.trainers__decsr-mobile {
+		display: block;
+		margin-top: 40px;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 150%;
+		color: #ffff;
+		z-index: 3;
+	}
+}
+/* -----------Trainers - Breakpoints for mobile----------- */
+
+
+/* ------------Directions------------ */
+.directions {
+	padding: 150px 0 0 0;
+}
+.directions__title {
+	font-weight: bold;
+	font-size: 72px;
+	line-height: 120%;
+	text-transform: uppercase;
+	margin-bottom: 100px;
+}
+.directions__wrapper {
+	max-width: 1840px;
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+}
+.directions__item {
+	position: relative;
+	max-width: 480px;
+	max-height: 700px;
+}
+.directions__text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%);
+	font-weight: 500;
+	font-size: 48px;
+	line-height: 120%;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke: 1.5px white;
+}
+/* ------------Directions------------ */
+
+/* -----------Directions - Breakpoints for iPad mini----------- */
+
+@media (max-width: 768px) {
+	.container {
+		max-width: 768px;
+	}
+	.directions {
+		padding: 60px 0 0 0;
+	}
+	.directions__title {
+		font-size: 36px;
+		margin-bottom: 60px;
+	}
+	.directions__wrapper {
+		display: flex;
+		flex-wrap: wrap;	
+	}
+	.directions__text {
+		font-size: 36px;
+	}
+}
+/* -----------Directions - Breakpoints for iPad mini----------- */
+
+/* -----------Directions - Breakpoints for mobile----------- */
+@media (max-width: 360px) {
+	.container {
+		max-width: 360px;
+	}
+	.directions {
+		padding: 150px 0 0 0;
+	}
+	.directions__title {
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 120%;
+		text-transform: uppercase;
+	}
+	.directions__wrapper {
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+	}
+	.directions__item {
+		position: relative;
+		max-width: 360px;
+		max-height: 300px;
+	}
+	.directions__item img{
+		max-width: 360px;
+		max-height: 300px;
+	}
+	.directions__text {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%);
+		font-weight: 500;
+		font-size: 36px;
+		line-height: 120%;
+		-webkit-text-fill-color: transparent;
+		-webkit-text-stroke: 1.5px white;
+	}
+}
+/* -----------Directions - Breakpoints for mobile----------- */
+
+/* ------------Schedule------------ */
+.schedule {
+	padding: 150px 0 0 0;
+}
+.schedule__title {
+	font-weight: bold;
+	font-size: 72px;
+	line-height: 120%;
+	text-transform: uppercase;
+}
+.schedule__wrapper {
+	margin-top: 100px;
+	max-width: 1291px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.schedule__item {
+	margin-bottom: 30px;
+	padding: 30px 30px 40px 30px;
+	width: 410px;
+	height: 540px;
+	background: #17171A;
+}
+.item__text {
+	display: flex;
+	justify-content: space-between;
+}
+.item__duration {
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 120%;
+}
+.item__timesperweek {
+	margin-top: 20px;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 120%;
+}
+.item__descr {
+	margin-top: 50px;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 150%;
+}
+.item__price {
+	margin-top: 60px;
+	display: flex;
+	justify-content: space-between;
+}
+.price__current {
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 120%;
+}
+.price__old {
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 120%;
+	text-decoration-line: line-through;
+}
+.item__button {
+	margin-top: 30px;
+	width: 350px;
+	height: 55px;
+	background: #F9BA50;
+	border-radius: 0px 40px 40px 0px;
+
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 21px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+/* ------------Schedule------------ */
+
+/* -----------Schedule - Breakpoints for iPad mini----------- */
+
+@media (max-width: 768px) {
+	.schedule {
+		padding: 80px 0 0 0;
+	}
+	.schedule__title {
+		font-size: 36px;
+	}
+	.schedule__wrapper {
+		margin-top: 60px;
+	}
+	.schedule__item {
+		margin-bottom: 20px;
+		width: 354px;
+		height: 401px;
+	}
+	.item__duration {
+		font-size: 24px;
+	}
+	.item__timesperweek {
+		margin-top: 20px;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 120%;
+	}
+	.item__descr {
+		margin-top: 30px;
+		font-size: 14px;
+	}
+	.item__price {
+		margin-top: 60px;
+		display: flex;
+		justify-content: space-between;
+	}
+	.price__current {
+		font-size: 30px;
+	}
+	.price__old {
+		font-size: 18px;
+		margin-right: 80px;
+	}
+	.item__button {
+		width: 314px;
+		height: 50px;
+		font-size: 14px;
+	}
+}
+/* -----------Schedule - Breakpoints for iPad mini----------- */
+
+/* -----------Schedule - Breakpoints for mobile----------- */
+@media (max-width: 360px) {
+	.container {
+		max-width: 360px;
+	}
+	.schedule {
+		padding: 60px 0 0 0;
+	}
+	.schedule__title {
+		font-size: 24px;
+	}
+	.schedule__wrapper {
+		margin-top: 40px;
+		max-width: 360px;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+	.schedule__item {
+		margin-bottom: 20px;
+		padding: 30px 20px 30px 20px;
+		width: 320px;
+		height: 401px;
+		background: #17171A;
+	}
+	.item__text {
+		display: flex;
+		justify-content: space-between;
+	}
+	.item__duration {
+		font-size: 24px;
+	}
+	.item__timesperweek {
+		margin-top: 7px;
+		font-size: 16px;
+	}
+	.item__descr {
+		margin-top: 30px;
+		font-size: 14px;
+	}
+	.item__price {
+		margin-top: 40px;
+		display: flex;
+		justify-content: space-between;
+	}
+	.price__current {
+		font-size: 30px;
+		margin-right: 30px;
+	}
+	.price__old {
+		font-size: 18px;
+		margin-right: 41px;
+	}
+	.item__button {
+		margin-top: 30px;
+		width: 280px;
+		height: 50px;
+		background: #F9BA50;
+		border-radius: 0px 40px 40px 0px;
+	
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 21px;
+		text-transform: uppercase;
+		color: #FFFFFF;
+	}
+}
+/* -----------Schedule - Breakpoints for mobile----------- */
+
+/* ------------Instagram------------ */
+.instagram {
+	padding: 150px 0 0 0;
+}
+.instagram__title {
+	font-weight: bold;
+	font-size: 72px;
+	line-height: 120%;
+	text-transform: uppercase;
+}
+.instagram__wrapper {
+	margin-top: 100px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.instagram__item {
+	margin-bottom: 30px;
+}
+/* ------------Instagram------------ */
+
+/* -----------Instagram - Breakpoints for iPad mini----------- */
+@media (max-width: 768px) {
+	.instagram {
+		padding: 60px 0 0 0;
+	}
+	.instagram__title {
+		font-size: 36px;
+	}
+	.instagram__wrapper {
+		margin-top: 50px;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	.instagram__item {
+		margin-bottom: 30px;
+	}
+	.instagram__item img{
+		max-width: 354px;
+		max-height: 354px;
+	}
+	#hide {
+		display: none;
+	}
+}
+/* -----------Instagram - Breakpoints for iPad mini----------- */
+
+/* -----------Instagram - Breakpoints for mobile----------- */
+@media (max-width: 360px) {
+	.container {
+		max-width: 360px;
+	}
+	.instagram {
+		padding: 60px 0 0 0;
+	}
+	.instagram__title {
+		font-size: 24px;
+	}
+	.instagram__wrapper {
+		margin-top: 40px;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	.instagram__item {
+		margin-bottom: 20px;
+	}
+	.instagram__item img {
+		max-width: 150px;
+		max-height: 150px;
+	}
+}
+/* -----------Instagram - Breakpoints for mobile----------- */
+
+
+/* ------------Footer------------ */
+.footer {
+	padding: 150px 0 0 0;
+}
+.footer__wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+.footer__logo {
+}
+.logo__logo {
+}
+.logo__descr {
+	margin-top: 20px;
+	max-width: 410px;
+	max-height: 135px;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 150%;
+}
+.logo__social-icons {
+	margin-top: 40px;
+	width: 230px;
+	height: 25px;
+	display: flex;
+	justify-content: space-between;
+}
+.logo__icon {
+}
+.logo__confidential {
+	margin-top: 40px;
+}
+.footer__sections {
+	margin-top: 43px;
+	margin-left: 150px;
+}
+.sections__title {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 120%;
+}
+.sections__wrapper {
+	margin-top: 63px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.sections__item {
+	margin-top: 30px;
+}
+.footer__contacts {
+	margin-top: 43px;
+	margin-left: 150px;
+}
+.contacts__title {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 120%;
+}
+.contacts__wrapper {
+	margin-top: 63px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.contacts__item {
+	margin-top: 30px;
+}
+.item__subtitle {
+	font-weight: bold;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #F9BA50;
+}
+.item__descr {
+	margin-top: 15px;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 15px;
+}
+.confidential {
+	display: none;
+}
+/* ------------Footer------------ */
+
+/* -----------Footer - Breakpoints for iPad mini----------- */
+@media (max-width: 768px) {
+	.footer {
+		padding: 50px 0 0 0;
+	}
+	.footer__wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+	.logo__descr {
+		margin-top: 20px;
+		max-width: 390px;
+		max-height: 144px;
+		font-size: 16px;
+	}
+	.logo__confidential {
+		display: none;
+	}
+	.footer__sections {
+		display: none;
+	}
+	.footer__contacts {
+		margin-top: 40px;
+		margin-left: 5px;
+	}
+	.contacts__wrapper {
+		margin-top: 40px;
+	}
+	.contacts__item {
+		margin-top: 30px;
+	}
+	.item__subtitle {
+		font-size: 12px;
+	}
+	.item__descr {
+		margin-top: 15px;
+		font-size: 15px;
+		line-height: 18px;
+	}
+	.confidential {
+		display: block;
+		margin-top: 40px;
+	}
+	.confidential__hr {
+		margin: 0px 20px 0 20px;
+		height: 1px;
+		background-color: #FFFFFF;
+	}
+	.confidential__wrapper {
+		margin-top: 20px;
+		padding: 0 20px 30px 20px;
+		display: flex;
+		justify-content: space-between;
+	}
+	.confidential__rights {
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 19px;
+	}
+	.confidential__policy {
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 150%;
+	}
+}
+/* -----------Footer - Breakpoints for iPad mini----------- */
+
+/* -----------Footer - Breakpoints for mobile----------- */
+@media (max-width: 360px) {
+	.container {
+		max-width: 360px;
+	}
+	.footer {
+		padding: 40px 0 0 0;
+	}
+	.footer__wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+	.footer__logo {
+	}
+	.logo__logo {
+		text-align: center;
+	}
+	.logo__descr {
+		margin-top: 40px;
+		max-width: 320px;
+		max-height: 105px;
+		font-size: 14px;
+	}
+	.logo__social-icons {
+		margin: 40px auto;
+		text-align: center;
+		width: 230px;
+		height: 25px;
+		display: flex;
+		justify-content: space-between;
+	}
+	.logo__confidential {
+		margin-top: 40px;
+	}
+	.footer__sections {
+		display: none;
+	}
+	.footer__contacts {
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+	.contacts__title {
+		display: none;
+	}
+	.contacts__wrapper {
+		margin-top: 0px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.contacts__item {
+		margin-top: 30px;
+	}
+	.item__subtitle {
+		font-weight: bold;
+		font-size: 12px;
+		text-transform: uppercase;
+		color: #F9BA50;
+	}
+	.item__descr {
+		margin-top: 15px;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 15px;
+	}
+	.confidential {
+		display: block;
+	}
+	.confidential__rights {
+		display: none;
+	}
+	.confidential__policy {
+		margin: 0 auto;
+	}
+}
+
+/* -----------Footer - Breakpoints for mobile----------- */
